@@ -918,4 +918,15 @@ img {
   left: 50%;
   margin-left: -480px; }
 
+/* Model Grid */
+.clothes__figure {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 300ms ease-in-out; }
+  .clothes__figure--is-showing {
+    opacity: 1;
+    transform: translateX(0px); }
+
 /*# sourceMappingURL=main.css.map */
