@@ -924,9 +924,27 @@ img {
   position: relative;
   opacity: 0;
   transform: translateX(40px);
-  transition: all 300ms ease-in-out; }
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+  cursor: pointer; }
   .clothes__figure--is-showing {
     opacity: 1;
     transform: translateX(0px); }
+  .clothes__figure:hover .clothes__caption {
+    left: 0; }
+  .clothes__figure:hover .clothes__image {
+    transform: scale(1.1); }
+.clothes__image {
+  display: block;
+  transition: all 300ms ease-in-out; }
+.clothes__caption {
+  position: absolute;
+  bottom: 10px;
+  left: -100%;
+  background-color: black;
+  color: white;
+  padding: 2px 8px;
+  font-size: 10px;
+  transition: all 300ms ease-out; }
 
 /*# sourceMappingURL=main.css.map */
