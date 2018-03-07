@@ -23,18 +23,30 @@ $(window).scroll(() => {
         });
     }
 
-    let distFromTop = $('.circle-window').offset().top,
+    let cwOffsetTop = $('.circle-window').offset().top,
         windowHeight = $(window).height();
-    if (wScroll > distFromTop - windowHeight) {
-        console.log("Hy");
+    if (wScroll > cwOffsetTop - windowHeight) {
         $('.circle-window').css({
-            'background-position': `center ${wScroll - distFromTop}px`
+            'background-position': `center ${wScroll - cwOffsetTop}px`
         });
 
-        let cwtOpacity = (wScroll - distFromTop + 400)/ (wScroll/5);
+        let opacity = (wScroll - cwOffsetTop + 400)/ (wScroll/5);
 
         $('.circle-window__tint').css({
-            'opacity': cwtOpacity
+            'opacity': opacity
+        });
+    }
+
+    let bOffsetTop = $('.blog').offset().top;
+    if(wScroll > bOffsetTop - windowHeight) {
+        let offsetLeft = Math.min(0, wScroll - bOffsetTop + windowHeight - 350),
+            offset = Math.abs(offsetLeft);
+        $('.blog__post--left').css({
+            'transform': `translate(${offsetLeft}px, ${(20 + offset * 0.3)}px)`
+        });
+
+        $('.blog__post--right').css({
+            'transform': `translate(${offset}px, ${(20 + offset * 0.3)}px)`
         });
     }
 

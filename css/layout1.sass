@@ -112,6 +112,7 @@ $logo-height: 100px
         attachment: fixed
     border-radius: 50%
     position: relative
+    margin-bottom: 100px
     &__tint
         background-color: rgba(0,0,0,0.5)
         position: absolute
@@ -149,3 +150,20 @@ $logo-height: 100px
         &:hover
             background: white
             color: black
+
+/*  Posts */
+
+.blog
+    margin-top: 100px
+    &__post
+        border: 1px solid #e1e1e1
+        padding: 20px 20px 0
+        background: white
+        position: relative
+        z-index: 1
+        &--left
+            z-index: 0
+            transform: translate(100px, 20px)   
+        &--right
+            z-index: 0
+            transform: translate(-100px, 20px)

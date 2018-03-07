@@ -954,7 +954,8 @@ img {
   background-repeat: repeat-y;
   background-attachment: fixed;
   border-radius: 50%;
-  position: relative; }
+  position: relative;
+  margin-bottom: 100px; }
   .circle-window__tint {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -991,5 +992,21 @@ img {
     .circle-window__action:hover {
       background: white;
       color: black; }
+
+/*  Posts */
+.blog {
+  margin-top: 100px; }
+  .blog__post {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 0;
+    background: white;
+    position: relative;
+    z-index: 1; }
+    .blog__post--left {
+      z-index: 0;
+      transform: translate(100px, 20px); }
+    .blog__post--right {
+      z-index: 0;
+      transform: translate(-100px, 20px); }
 
 /*# sourceMappingURL=main.css.map */
