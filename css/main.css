@@ -867,11 +867,16 @@ h1 {
 figure {
   margin: auto; }
 
-.content article {
-  padding: 100px 0;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center; }
+.content {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 300px; }
+  .content article {
+    padding: 100px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center; }
 
 img {
   max-width: 100%; }
@@ -879,9 +884,9 @@ img {
 /* Parallax Header */
 .header-box {
   position: relative;
-  height: 600px;
+  height: 100vh;
   background-image: url("../images/bird-bg.jpg");
-  background-size: auto 600px;
+  background-size: 100% 100vh;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -906,7 +911,7 @@ img {
   position: absolute;
   left: 50%;
   margin-left: -430px;
-  top: 380px; }
+  top: 60%; }
 
 .back-bird {
   width: 960px;
@@ -924,7 +929,7 @@ img {
   position: relative;
   opacity: 0;
   transform: translateX(40px);
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease-in-out;
   overflow: hidden;
   cursor: pointer; }
   .clothes__figure--is-showing {
@@ -1008,5 +1013,20 @@ img {
     .blog__post--right {
       z-index: 0;
       transform: translate(-100px, 20px); }
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100%; }
+  .footer__content {
+    max-width: 640px;
+    margin: 0 auto; }
+  .footer__link {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

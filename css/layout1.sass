@@ -11,6 +11,10 @@ figure
     margin: auto
 
 .content 
+    position: relative
+    overflow: hidden
+    background-color: white
+    margin-bottom: 300px
     article
         padding: 100px 0
         max-width: 640px
@@ -22,8 +26,7 @@ img
     
 /* Parallax Header */
 
-$header-size: 100vh // Full height header <3
-$header-size: 600px
+$header-size: 100vh
 
 $logo-height: 100px
 
@@ -32,7 +35,7 @@ $logo-height: 100px
     height: $header-size
     background: 
         image: url("../images/bird-bg.jpg")
-        size: auto $header-size
+        size: 100% $header-size
         position: top center
         repeat: no-repeat
         attachment: fixed
@@ -59,7 +62,7 @@ $logo-height: 100px
     position: absolute
     left: 50%
     margin-left: -430px
-    top: 380px
+    top: 60%
 
 .back-bird
     width: 960px
@@ -79,7 +82,7 @@ $logo-height: 100px
         position: relative
         opacity: 0
         transform: translateX(40px)
-        transition: all 300ms ease-in-out
+        transition: all 400ms ease-in-out
         overflow: hidden
         cursor: pointer
         &--is-showing
@@ -167,3 +170,22 @@ $logo-height: 100px
         &--right
             z-index: 0
             transform: translate(-100px, 20px)
+
+/* Footer */
+
+.footer
+    background: black
+    color: white
+    padding: 40px 0
+    position: fixed
+    z-index: -1
+    bottom: 0
+    width: 100%
+    &__content
+        max-width: 640px
+        margin: 0 auto
+    &__section
+    &__link
+        color: white
+        
+        
