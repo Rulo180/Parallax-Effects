@@ -950,9 +950,46 @@ img {
 .circle-window {
   height: 640px;
   background-image: url(../images/model2.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-repeat: repeat-y;
   background-attachment: fixed;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
+  .circle-window__tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .circle-window__promo {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    font-size: 18;
+    line-height: 1.2; }
+    .circle-window__promo h2 {
+      color: white;
+      font-weight: 100;
+      font-size: 50px;
+      margin-bottom: 0px; }
+    .circle-window__promo strong {
+      color: white;
+      font-size: 30px; }
+  .circle-window__action {
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: all 200ms ease-in-out; }
+    .circle-window__action:hover {
+      background: white;
+      color: black; }
 
 /*# sourceMappingURL=main.css.map */

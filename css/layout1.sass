@@ -107,7 +107,45 @@ $logo-height: 100px
     height: 640px
     background: 
         image: url(../images/model2.jpg)
-        position: top center
-        repeat: no-repeat
+        position: center 0px
+        repeat: repeat-y
         attachment: fixed
     border-radius: 50%
+    position: relative
+    &__tint
+        background-color: rgba(0,0,0,0.5)
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+    &__promo
+        color: rgba(255, 255, 255, 0.6)
+        font:
+            weight: 300
+            size: 18
+        line-height: 1.2
+        h2
+            color: white
+            font-weight: 100
+            font-size: 50px
+            margin-bottom: 0px
+        strong
+            color: white
+            font-size: 30px
+    &__action
+        display: block
+        margin-top: 30px
+        font-size: 20px
+        text-decoration: none
+        color: white
+        border: 1px solid white
+        padding: 10px 20px
+        transition: all 200ms ease-in-out
+        &:hover
+            background: white
+            color: black
